@@ -4,7 +4,8 @@
 I'm gonna describe all the steps that I've performed to generate a phylogenetic tree here
 
 So I was asked to perfrom this for the septin protein, found in the cytoskeleton of the cell
-I will using the protein sequences of septins from each major classification to show the very reason we use a phylogenetic tree , to show how they are related
+
+I will be using the protein sequences of septins from each major classification to show the very reason we use a phylogenetic tree , to show how they are related
 
 
 
