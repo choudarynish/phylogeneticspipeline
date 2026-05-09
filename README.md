@@ -13,7 +13,7 @@ The protein sequences for septins from each organism was retrieved from UniProt 
 We will try to choose the sequences which are highly conserved, because it makes sense to draw evolutionary significance from the results, the literature states that the GTPase domain is the highly conserved one.
 The choice of organisms are the lab model organisms, like _Mus musculus, C.elegans, Drosophila melanogasster, etc._
 
-  1.1 Data Retrieved for Analysis
+  1.1 Data Retrieved for Analysis<br>
   Here is what I have chosen for the tree generation, based on what I have considered in the main section:
    >sp|Q8WYJ6|SEPT1_HUMAN Septin-1 OS=Homo sapiens OX=9606 GN=SEPTIN1 PE=1 SV=3<br>
    >sp|Q5EB96|SEPT1_RAT Septin-1 OS=Rattus norvegicus OX=10116 GN=Septin1 PE=1 SV=1<br>
@@ -23,7 +23,7 @@ The choice of organisms are the lab model organisms, like _Mus musculus, C.elega
    >sp|P42207|SEPT1_DROME Septin-1 OS=Drosophila melanogaster OX=7227 GN=Septin1 PE=1 SV=1<br>
    >tr|Q9U334|Q9U334_CAEEL Septin OS=Caenorhabditis elegans OX=6239 GN=unc-59 PE=1 SV=1<br>
 
-  1.2 Procedure
+  1.2 Procedure<br>
   Go to UniProt https://www.uniprot.org/
   In the Search tab, search for "Septins" and proceed
   <img src="https://github.com/user-attachments/assets/2864427d-b749-4c02-9b78-6309bd0de42c" width="700" alt="UniProt Search Results" /><br>
