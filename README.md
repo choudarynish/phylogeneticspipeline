@@ -1,5 +1,5 @@
 # phylogeneticspipeline
-**Phylogenetic Tree Generation and Analysis **
+**Phylogenetic Tree Generation and Analysis**
 
 I'm gonna describe all the steps that I've performed to generate a phylogenetic tree here
 
