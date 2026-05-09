@@ -15,12 +15,18 @@ The choice of organisms are the lab model organisms, like _Mus musculus, C.elega
 
   1.1 Data Retrieved for Analysis
   Here is what I have chosen for the tree generation, based on what I have considered in the main section:
-
+   >sp|Q8WYJ6|SEPT1_HUMAN Septin-1 OS=Homo sapiens OX=9606 GN=SEPTIN1 PE=1 SV=3
+   >sp|Q5EB96|SEPT1_RAT Septin-1 OS=Rattus norvegicus OX=10116 GN=Septin1 PE=1 SV=1
+   >sp|A5PJU9|SEPT1_BOVIN Septin-1 OS=Bos taurus OX=9913 GN=SEPTIN1 PE=2 SV=1
+   >sp|Q5ZMH1|SEPT2_CHICK Septin-2 OS=Gallus gallus OX=9031 GN=SEPTIN2 PE=2 SV=1
+   >sp|Q9DE33|SEP2A_XENLA Septin-2A OS=Xenopus laevis OX=8355 GN=sept2-a PE=1 SV=1
+   >sp|P42207|SEPT1_DROME Septin-1 OS=Drosophila melanogaster OX=7227 GN=Septin1 PE=1 SV=1
+   >tr|Q9U334|Q9U334_CAEEL Septin OS=Caenorhabditis elegans OX=6239 GN=unc-59 PE=1 SV=1
 
   1.2 Procedure
   Go to UniProt https://www.uniprot.org/
   In the Search tab, search for "Septins" and proceed
-  <img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/2864427d-b749-4c02-9b78-6309bd0de42c" />
+  <img src="https://github.com/user-attachments/assets/2864427d-b749-4c02-9b78-6309bd0de42c" width="700" alt="UniProt Search Results" />
   Filter the search results for choosing the organism and the domain
   <img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/153ba1fe-3d6b-4e9c-9d27-1628372de553" />
   After choosing the relevant query result, proceed to download the sequence in the FASTA format
@@ -29,6 +35,10 @@ The choice of organisms are the lab model organisms, like _Mus musculus, C.elega
   Copy the FASTA sequenences into a new .txt file annd rename it to Sequences.fasta and paste them there
   Edit the sequence identifier line as the organism name or the PDB ID
   <img width="1919" height="1027" alt="image" src="https://github.com/user-attachments/assets/5e5daeb6-1cc0-48e1-aad2-79054bae0d4e" />
+
+
+
+ 
 
 
 
