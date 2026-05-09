@@ -8,7 +8,7 @@ I will using the protein sequences of septins from each major classification to 
 
 
 
-**1. Data Retrieval**
+**1. Data Retrieval**<br>
 The protein sequences for septins from each organism was retrieved from UniProt Protein Data Bank (PDB)
 We will try to choose the sequences which are highly conserved, because it makes sense to draw evolutionary significance from the results, the literature states that the GTPase domain is the highly conserved one.
 The choice of organisms are the lab model organisms, like _Mus musculus, C.elegans, Drosophila melanogasster, etc._
