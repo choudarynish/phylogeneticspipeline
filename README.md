@@ -29,17 +29,17 @@ The choice of organisms are the lab model organisms, like _Mus musculus, C.elega
   <img src="https://github.com/user-attachments/assets/2864427d-b749-4c02-9b78-6309bd0de42c" width="700" alt="UniProt Search Results" />
   
   Filter the search results for choosing the organism and the domain
-  <img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/153ba1fe-3d6b-4e9c-9d27-1628372de553" />
+  <img src="https://github.com/user-attachments/assets/153ba1fe-3d6b-4e9c-9d27-1628372de553" width="700" alt="Filtering by Organism and Domain" />
   
   After choosing the relevant query result, proceed to download the sequence in the FASTA format
-  <img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/64b42318-fae6-40d0-873a-ed6608ad10b2" />
+  <img src="https://github.com/user-attachments/assets/64b42318-fae6-40d0-873a-ed6608ad10b2" width="700" alt="Downloading FASTA format" />
   
   Proceed with all other organisms as the same mentioned above
   
   Copy the FASTA sequenences into a new .txt file annd rename it to Sequences.fasta and paste them there
   
   Edit the sequence identifier line as the organism name or the PDB ID
-  <img width="1919" height="1027" alt="image" src="https://github.com/user-attachments/assets/5e5daeb6-1cc0-48e1-aad2-79054bae0d4e" />
+  <img src="https://github.com/user-attachments/assets/5e5daeb6-1cc0-48e1-aad2-79054bae0d4e" width="700" alt="Editing Sequence Identifiers" />
 
   
 
