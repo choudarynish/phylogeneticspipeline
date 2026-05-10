@@ -3,16 +3,16 @@
 
 I'm gonna describe all the steps that I've performed to generate a phylogenetic tree here
 
-So I was asked to perfrom this for the septin protein, found in the cytoskeleton of the cell
+I was asked to perfrom this for the septin protein, found in the cytoskeleton of the cell
 
-I will be using the protein sequences of septins from each major classification to show the very reason we use a phylogenetic tree , to show how they are related
+I will be using the protein sequences of septins from each major organism classification to show the very reason we use a phylogenetic tree, i.e. to show how they are related
 
 
 
 **1. Data Retrieval**<br>
 The protein sequences for septins from each organism was retrieved from UniProt Protein Data Bank (PDB)
 We will try to choose the sequences which are highly conserved, because it makes sense to draw evolutionary significance from the results, the literature states that the GTPase domain is the highly conserved one.
-The choice of organisms are the lab model organisms, like _Mus musculus, C.elegans, Drosophila melanogasster, etc._
+The choice of organisms are the lab model organisms, like _Mus musculus, C.elegans, Drosophila melanogasster, etc._, and other standards like _Homo sapiens, S. cerevisiae_ and others
 
   1.1 Data Retrieved for Analysis<br>
   Here is what I have chosen for the tree generation, based on what I have considered in the main section:
