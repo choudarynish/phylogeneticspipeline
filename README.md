@@ -45,6 +45,12 @@ The choice of organisms are the lab model organisms, like _Mus musculus, C.elega
   By the end of this step, you must have a file that contais all the retrieved sequences in one file, i.e, sequences.fasta
   <img src="https://github.com/user-attachments/assets/86adb0c5-c148-48a5-8e35-ca55491eb4dc" width="700" alt="Final Sequences File" /><br>
 
+
+**2. Data Cleaning and Trimming**
+The sequences retrieved from the biological databases can't be used directly, hence must be trimmed from the unnecessary sections it has
+Septins must be trimmed from
+
+2.1 Tool
   
 
 
