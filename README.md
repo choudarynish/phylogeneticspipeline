@@ -40,7 +40,8 @@ The choice of organisms are the lab model organisms, like _Mus musculus, C.elega
   <img src="https://github.com/user-attachments/assets/5e5daeb6-1cc0-48e1-aad2-79054bae0d4e" width="700" alt="Editing Sequence Identifiers" /><br>
 
   By the end of this step, you must have a file that contais all the retrieved sequences in one file, i.e, sequences.fasta
-  <img src="https://github.com/user-attachments/assets/86adb0c5-c148-48a5-8e35-ca55491eb4dc" width="700" alt="Final Sequences File" /><br>
+ <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/2afb9dc0-6b74-45a1-95d4-f2bd78662b56" />
+<br>
 
 
 **2. Performing MSA(Multiple Sequence Alignment)**
@@ -82,6 +83,8 @@ Export the alignment in the MEGA format as shown, after which a dialog box pops 
 This format is used to further analyse it within the same application, reducing the dependence on multiple applications.
 
 By the end of this step, we must get the sequences underwent MSA, thus generating sequencesaligned.meg
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/d87d7262-54a0-4fe5-9c7c-f08c8ce74560" />
+
 
 **2.3 Data cleaning and processing**
 
