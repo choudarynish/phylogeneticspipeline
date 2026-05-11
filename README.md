@@ -76,8 +76,14 @@ Change the parameters, if required and click OK
 The application returns the aligned sequences onto it
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/9f20520c-c35d-478f-beb8-6e1c8c9e9c04" /><br>
 
-Export the alignment as shown:
+Export the alignment in the MEGA format as shown, after which a dialog box pops up to save it. Save it in the same folder as the previous one, as sequencesaligned.meg
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/b4b024e9-b67a-4ea7-94da-6bbea3d974fc" /><br>
+
+This format is used to further analyse it within the same application, reducing the dependence on multiple applications.
+
+By the end of this step, we must get the sequences underwent MSA, thus generating sequencesaligned.meg
+
+**2.3 Data cleaning and processing**
 
 
 
