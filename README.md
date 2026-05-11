@@ -2,11 +2,8 @@
 **Phylogenetic Tree Generation and Analysis**
 
 I'm gonna describe all the steps that I've performed to generate a phylogenetic tree here
-
 I was asked to perfrom this for the septin protein, found in the cytoskeleton of the cell
-
 I will be using the protein sequences of septins from each major organism classification to show the very reason we use a phylogenetic tree, i.e. to show how they are related
-
 
 
 **1. Data Retrieval**<br>
@@ -46,11 +43,14 @@ The choice of organisms are the lab model organisms, like _Mus musculus, C.elega
   <img src="https://github.com/user-attachments/assets/86adb0c5-c148-48a5-8e35-ca55491eb4dc" width="700" alt="Final Sequences File" /><br>
 
 
-**2. Data Cleaning and Trimming**
-The sequences retrieved from the biological databases can't be used directly, hence must be trimmed from the unnecessary sections it has
-Septins must be trimmed from
+**2. Performing MSA(Multiple Sequence Alignment)**
+The sequences retrieved from the biological databases are aligned to each other based on the similar sequences they share, which is demonstrated by MSA 
 
-2.1 Tool
+2.1 Tools Used<br>
+We will be using the MEGA Software for performing the MSA
+
+2.2 Procedure<br>
+
   
 
 
