@@ -66,6 +66,19 @@ Loacte the file in the dialog box which will pop up
 The application shows the sequences from the file, coded by a unique colour for each amino acid residue
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/761b7118-9c82-4a37-81c6-94f89c4f255a" ><br>
 
+Select all the sequences by using keyboard shortcuts or just the cursor
+Now go to Alignment > Align by MUSCLE
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/c3ab478a-20f9-4bbe-bcde-ef4e106bd8ac" /><br>
+
+Change the parameters, if required and click OK
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/f6d78fdc-bed9-4e23-89ed-ca499a3ccd72" /><br>
+
+The application returns the aligned sequences onto it
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/9f20520c-c35d-478f-beb8-6e1c8c9e9c04" /><br>
+
+Export the alignment as shown:
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/b4b024e9-b67a-4ea7-94da-6bbea3d974fc" /><br>
+
 
 
 
