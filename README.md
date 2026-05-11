@@ -85,7 +85,7 @@ This format is used to further analyse it within the same application, reducing 
 By the end of this step, we must get the sequences underwent MSA, thus generating sequencesaligned.meg
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/d87d7262-54a0-4fe5-9c7c-f08c8ce74560" />
 
-Why are we using MUSCLE here? What parameteres did we change? Logic behind it?
+Why are we using MUSCLE here? What parameteres did we change? Logic behind it?<br>
 **2.3 Data cleaning and processing**
 
 
