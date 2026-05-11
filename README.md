@@ -55,6 +55,19 @@ Install the MEGA application https://www.megasoftware.net/
 Open the application to get the welcome screen
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/4b1f7c63-6025-4886-9474-a5ed68e67957" /><br>
 
+Choose Align> Edit/Build Alignment
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/6517d606-407b-4383-8cdb-dd41bac49f7d" /><br>
+
+Choose to retrieve sequences from the file
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/03cc23a9-6808-427b-8b06-5b123446f0bc" /><br>
+
+Loacte the file in the dialog box which will pop up
+
+The application shows the sequences from the file, coded by a unique colour for each amino acid residue
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/761b7118-9c82-4a37-81c6-94f89c4f255a" ><br>
+
+
+
 
 
 
