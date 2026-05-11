@@ -50,6 +50,14 @@ The sequences retrieved from the biological databases are aligned to each other 
 We will be using the MEGA Software for performing the MSA
 
 2.2 Procedure<br>
+Install the MEGA application https://www.megasoftware.net/ 
+
+Open the application to get the welcome screen
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/4b1f7c63-6025-4886-9474-a5ed68e67957" /><br>
+
+
+
+
 
   
 
