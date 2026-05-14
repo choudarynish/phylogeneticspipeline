@@ -71,7 +71,8 @@ Select all the sequences by using keyboard shortcuts or just the cursor
 Now go to Alignment > Align by MUSCLE
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/c3ab478a-20f9-4bbe-bcde-ef4e106bd8ac" /><br>
 
-Change the parameters, if required and click OK
+Change the parameters as follows:, if required and click OK
+
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/f6d78fdc-bed9-4e23-89ed-ca499a3ccd72" /><br>
 
 The application returns the aligned sequences onto it
