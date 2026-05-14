@@ -16,7 +16,7 @@ The protein sequences for septins from each organism were retrieved from the **U
 > sp|Q5ZMH1|SEPT2_CHICK Septin-2 OS=Gallus gallus OX=9031 GN=SEPTIN2 PE=2 SV=1
 > sp|Q9DE33|SEP2A_XENLA Septin-2A OS=Xenopus laevis OX=8355 GN=sept2-a PE=1 SV=1
 > sp|P42207|SEPT1_DROME Septin-1 OS=Drosophila melanogaster OX=7227 GN=Septin1 PE=1 SV=1
-> tr|Q9U334|Q9U334_CAEEL Septin OS=Caenorhabditis elegans OX=6239 GN=unc-59 PE=1 SV=1
+> tr|Q9U334|Q9U334_CAEEL Septin OS=Caenorhabditis elegans OX=6239 GN=unc-59 PE=1 SV=1 chang theseeeeeeee
 
 ### **1.2 The Procedure**
 * Go to [UniProt](https://www.uniprot.org/) and search for "Septins".
@@ -44,7 +44,7 @@ We are using the [MEGA Software](https://www.megasoftware.net/) for alignment an
 * Open MEGA and choose Align > Edit/Build Alignment.
 <img width="1440" height="900" alt="MEGA Welcome" src="https://github.com/user-attachments/assets/4b1f7c63-6025-4886-9474-a5ed68e67957" />
 
-* Select Retrieve sequences from a file" and locate your `sequ.fasta`.
+* Select Retrieve sequences from a file" and locate your `seq.fasta`.
 <img width="1440" height="900" alt="Load File" src="https://github.com/user-attachments/assets/03cc23a9-6808-427b-8b06-5b123446f0bc" />
 
 * Select all sequences and navigate to Alignment > Align by MUSCLE.
@@ -61,7 +61,7 @@ We are using the [MEGA Software](https://www.megasoftware.net/) for alignment an
 ### **3 Data Cleaning and Trimming**
 We remove non-aligned regions (ragged N and C terminals) and excessive gaps that act as "noise" during tree generation.
 
-** 3.1 Procedure:**
+**3.1 Procedure:**
 1. In Alignment Explorer, identify columns with excessive gaps.
 2. Highlight and Delete the unaligned ends (N-terminus and C-terminus).
 3. Scan for unique large insertions that don't align with the alignment.
