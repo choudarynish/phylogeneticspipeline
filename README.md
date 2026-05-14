@@ -72,6 +72,7 @@ Now go to Alignment > Align by MUSCLE
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/c3ab478a-20f9-4bbe-bcde-ef4e106bd8ac" /><br>
 
 Change the parameters as follows:, if required and click OK
+Gap penalties: Open=-2.9 , Extend=0 , Hydrophobicity Multiplier=1.2
 
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/f6d78fdc-bed9-4e23-89ed-ca499a3ccd72" /><br>
 
