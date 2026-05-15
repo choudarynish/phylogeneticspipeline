@@ -5,7 +5,7 @@ I'm gonna describe all the steps that I've performed to generate a phylogenetic 
 ---
 
 ## **1. Data Retrieval**
-The protein sequences for septins from each organism were retrieved from the **UniProt Protein Data Bank (PDB)**.
+The protein sequences for septins from each organism were retrieved from NCBI
 
 **Organisms selected:** Lab model organisms like *Mus musculus, C. elegans, Drosophila melanogaster*, and other standards like *Homo sapiens* and *S. cerevisiae*.
 
@@ -19,17 +19,17 @@ The protein sequences for septins from each organism were retrieved from the **U
 > tr|Q9U334|Q9U334_CAEEL Septin OS=Caenorhabditis elegans OX=6239 GN=unc-59 PE=1 SV=1 chang theseeeeeeee
 
 ### **1.2 The Procedure**
-* Go to [UniProt](https://www.uniprot.org/) and search for "Septins".
-<img src="https://github.com/user-attachments/assets/2864427d-b749-4c02-9b78-6309bd0de42c" width="800" alt="UniProt Search Results" />
+* Go to [NCBI](https://www.ncbi.nlm.nih.gov/) and search for "Septins".
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/3d2335f7-0395-41cb-bfe1-69a28e536656" />
 
 * Filter results by Organism and Domain
-<img src="https://github.com/user-attachments/assets/153ba1fe-3d6b-4e9c-9d27-1628372de553" width="800" alt="Filtering" />
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/0e32f2a8-2585-45a8-adfe-d871dd10aafb" />
 
 * Download the sequence in **FASTA format**. Repeat for all chosen organisms.
-<img src="https://github.com/user-attachments/assets/64b42318-fae6-40d0-873a-ed6608ad10b2" width="800" alt="FASTA Download" />
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/3f2e57db-5d04-4c5e-b0a4-f8b6dbd3afb7" />
 
 * Save all sequences into a single `.txt` file and rename it to `seq.fasta`. 
-* Clean the sequence identifier lines to show only the organism's name or PDB ID for better readability.
+* Clean the sequence identifier lines to show only the organism's name for better readability.
 <img src="https://github.com/user-attachments/assets/5e5daeb6-1cc0-48e1-aad2-79054bae0d4e" width="800" alt="Editing Identifiers" />
 
 ---
