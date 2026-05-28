@@ -3,7 +3,6 @@
 I'm gonna describe all the steps that I've performed to generate a phylogenetic tree here. I was asked to perform this for the **Septin protein**, found in the cytoskeleton of the cell. I will be using the protein sequences of septins from each major organism classification to show the very reason we use a phylogenetic tree, i.e., to show how they are related.
 
 
-
 **1. Data Retrieval**
 The protein sequences for septins from each organism were retrieved from NCBI
 
