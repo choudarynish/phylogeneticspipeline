@@ -10,13 +10,13 @@ The protein sequences for septins from each organism were retrieved from NCBI
 **Organisms selected:** Lab model organisms like *Mus musculus, C. elegans, Drosophila melanogaster*, and other standards like *Homo sapiens* and *S. cerevisiae*.
 
 ### **1.1 Data Selected for Analysis**
-> sp|Q8WYJ6|SEPT1_HUMAN Septin-1 OS=Homo sapiens OX=9606 GN=SEPTIN1 PE=1 SV=3
-> sp|Q5EB96|SEPT1_RAT Septin-1 OS=Rattus norvegicus OX=10116 GN=Septin1 PE=1 SV=1
-> sp|A5PJU9|SEPT1_BOVIN Septin-1 OS=Bos taurus OX=9913 GN=SEPTIN1 PE=2 SV=1
-> sp|Q5ZMH1|SEPT2_CHICK Septin-2 OS=Gallus gallus OX=9031 GN=SEPTIN2 PE=2 SV=1
-> sp|Q9DE33|SEP2A_XENLA Septin-2A OS=Xenopus laevis OX=8355 GN=sept2-a PE=1 SV=1
-> sp|P42207|SEPT1_DROME Septin-1 OS=Drosophila melanogaster OX=7227 GN=Septin1 PE=1 SV=1
-> tr|Q9U334|Q9U334_CAEEL Septin OS=Caenorhabditis elegans OX=6239 GN=unc-59 PE=1 SV=1 chang theseeeeeeee
+> sp|Q8WYJ6|SEPT1_HUMAN Septin-1 OS=Homo sapiens OX=9606 GN=SEPTIN1 PE=1 SV=3<br>
+> sp|Q5EB96|SEPT1_RAT Septin-1 OS=Rattus norvegicus OX=10116 GN=Septin1 PE=1 SV=1<br>
+> sp|A5PJU9|SEPT1_BOVIN Septin-1 OS=Bos taurus OX=9913 GN=SEPTIN1 PE=2 SV=1<br>
+> sp|Q5ZMH1|SEPT2_CHICK Septin-2 OS=Gallus gallus OX=9031 GN=SEPTIN2 PE=2 SV=1<br>
+> sp|Q9DE33|SEP2A_XENLA Septin-2A OS=Xenopus laevis OX=8355 GN=sept2-a PE=1 SV=1<br>
+> sp|P42207|SEPT1_DROME Septin-1 OS=Drosophila melanogaster OX=7227 GN=Septin1 PE=1 SV=1<br>
+> tr|Q9U334|Q9U334_CAEEL Septin OS=Caenorhabditis elegans OX=6239 GN=unc-59 PE=1 SV=1<br>
 
 ### **1.2 The Procedure**
 * Go to [NCBI](https://www.ncbi.nlm.nih.gov/) and search for "Septins".
