@@ -1,15 +1,15 @@
-# **Phylogenetic Tree Generation and Analysis Pipeline**
+**Phylogenetic Tree Generation and Analysis Pipeline**
 
 I'm gonna describe all the steps that I've performed to generate a phylogenetic tree here. I was asked to perform this for the **Septin protein**, found in the cytoskeleton of the cell. I will be using the protein sequences of septins from each major organism classification to show the very reason we use a phylogenetic tree, i.e., to show how they are related.
 
 
 
-## **1. Data Retrieval**
+**1. Data Retrieval**
 The protein sequences for septins from each organism were retrieved from NCBI
 
 **Organisms selected:** Lab model organisms like *Mus musculus, C. elegans, Drosophila melanogaster*, and other standards like *Homo sapiens* and *S. cerevisiae*.
 
-### **1.1 Data Selected for Analysis**
+**1.1 Data Selected for Analysis**
 > sp|Q8WYJ6|SEPT1_HUMAN Septin-1 OS=Homo sapiens OX=9606 GN=SEPTIN1 PE=1 SV=3<br>
 > sp|Q5EB96|SEPT1_RAT Septin-1 OS=Rattus norvegicus OX=10116 GN=Septin1 PE=1 SV=1<br>
 > sp|A5PJU9|SEPT1_BOVIN Septin-1 OS=Bos taurus OX=9913 GN=SEPTIN1 PE=2 SV=1<br>
@@ -18,7 +18,7 @@ The protein sequences for septins from each organism were retrieved from NCBI
 > sp|P42207|SEPT1_DROME Septin-1 OS=Drosophila melanogaster OX=7227 GN=Septin1 PE=1 SV=1<br>
 > tr|Q9U334|Q9U334_CAEEL Septin OS=Caenorhabditis elegans OX=6239 GN=unc-59 PE=1 SV=1<br>
 
-### **1.2 The Procedure**
+**1.2 Procedure**
 * Go to [NCBI](https://www.ncbi.nlm.nih.gov/) and search for "Septins".
 <img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/3d2335f7-0395-41cb-bfe1-69a28e536656" />
 
@@ -34,13 +34,13 @@ The protein sequences for septins from each organism were retrieved from NCBI
 
 
 
-## **2. Performing Multiple Sequence Alignment (MSA)**
+**2. Performing Multiple Sequence Alignment (MSA)**
 MSA aligns sequences based on shared similarities to highlight conserved regions and evolutionary changes.
 
-### **2.1 Tools Used**
+**2.1 Tools Used**
 We are using the [MEGA Software](https://www.megasoftware.net/) for alignment and tree construction.
 
-### **2.2 The Procedure**
+**2.2 The Procedure**
 * Open MEGA and choose Align > Edit/Build Alignment.
 <img width="1440" height="900" alt="MEGA Welcome" src="https://github.com/user-attachments/assets/4b1f7c63-6025-4886-9474-a5ed68e67957" />
 
@@ -57,7 +57,7 @@ We are using the [MEGA Software](https://www.megasoftware.net/) for alignment an
 <img width="1440" height="900" alt="Export MEGA" src="https://github.com/user-attachments/assets/b4b024e9-b67a-4ea7-94da-6bbea3d974fc" />
 
 
-### **3 Data Cleaning and Trimming**
+**3 Data Cleaning and Trimming**
 We remove non-aligned regions (ragged N and C terminals) and excessive gaps that act as "noise" during tree generation.
 
 **3.1 Procedure:**
@@ -66,10 +66,10 @@ We remove non-aligned regions (ragged N and C terminals) and excessive gaps that
 3. Scan for unique large insertions that don't align with the alignment.
 
 
-## **4. Constructing the Phylogenetic Tree**
+**4. Constructing the Phylogenetic Tree**
 This is the final core step to visualize evolutionary relationships.
 
-### **4.1 Procedure**
+**4.1 Procedure**
 * Return to the main MEGA window and click Phylogeny > Construct/Test Neighbor-Joining Tree.
 * Load your `seqaligned.meg` file.
 * In Analysis Preferences, set the following:
