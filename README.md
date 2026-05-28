@@ -2,7 +2,7 @@
 
 I'm gonna describe all the steps that I've performed to generate a phylogenetic tree here. I was asked to perform this for the **Septin protein**, found in the cytoskeleton of the cell. I will be using the protein sequences of septins from each major organism classification to show the very reason we use a phylogenetic tree, i.e., to show how they are related.
 
----
+
 
 ## **1. Data Retrieval**
 The protein sequences for septins from each organism were retrieved from NCBI
@@ -32,7 +32,7 @@ The protein sequences for septins from each organism were retrieved from NCBI
 * Clean the sequence identifier lines to show only the organism's name for better readability.
 <img src="https://github.com/user-attachments/assets/5e5daeb6-1cc0-48e1-aad2-79054bae0d4e" width="800" alt="Editing Identifiers" />
 
----
+
 
 ## **2. Performing Multiple Sequence Alignment (MSA)**
 MSA aligns sequences based on shared similarities to highlight conserved regions and evolutionary changes.
@@ -56,7 +56,6 @@ We are using the [MEGA Software](https://www.megasoftware.net/) for alignment an
 * Export the alignment in MEGA format*as `seqaligned.meg`.
 <img width="1440" height="900" alt="Export MEGA" src="https://github.com/user-attachments/assets/b4b024e9-b67a-4ea7-94da-6bbea3d974fc" />
 
----
 
 ### **3 Data Cleaning and Trimming**
 We remove non-aligned regions (ragged N and C terminals) and excessive gaps that act as "noise" during tree generation.
@@ -66,7 +65,6 @@ We remove non-aligned regions (ragged N and C terminals) and excessive gaps that
 2. Highlight and Delete the unaligned ends (N-terminus and C-terminus).
 3. Scan for unique large insertions that don't align with the alignment.
 
----
 
 ## **4. Constructing the Phylogenetic Tree**
 This is the final core step to visualize evolutionary relationships.
@@ -79,5 +77,3 @@ This is the final core step to visualize evolutionary relationships.
     * Model/Method: p-distance (for Protein).
 *  Click OK to generate and visualize the final tree.
 
-**Logic: Why Bootstrap 1000?**
-The Bootstrap value shows the confidence level of a branch. Running 1000 iterations checks how often a grouping occurs; values >70 generally indicate a reliable evolutionary relationship.
