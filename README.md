@@ -97,8 +97,11 @@ Before building a Maximum Likelihood tree, the best-fit amino-acid substitution 
 **4.1 Procedure**
 
 1. Main MEGA window → Models → Find Best Protein Models (ML) → load `seqtrimmed.meg`.
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/e72ea892-108c-4690-a526-a2f9dd0d8176" />
+<img width="620" height="593" alt="image" src="https://github.com/user-attachments/assets/0097739d-2866-4b71-96ea-f3f963805898" />
 2. MEGA ranks models by BIC and AICc. Choose the model with the lowest BIC.
-3. Record the winner and its parameters (for septins this is typically LG+G or LG+G+I)
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/32eae2f3-2fe9-4f75-96b2-829830520899" />
+4. Record the winner and its parameters (for septins this is typically LG+G or LG+G+I)
 
 
 **5. Constructing the Phylogenetic Tree**
@@ -107,14 +110,20 @@ I built a Maximum Likelihood (ML) tree, which finds the topology that makes the 
 
 **5.1 Procedure**
 1. Return to the main MEGA window and click Phylogeny > Construct/Test Maximum Likelihood Tree.
-2. Load your `seqaligned.meg` file.
-3. In Analysis Preferences, set the following:
-   Substitution model: the best-fit model from section 4 (e.g. LG)-changeeeeeeeeeeeee
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/012c5271-e2bc-4219-83f3-c6a28ae01a50" />
+3. Load your `seqaligned.meg` file.
+4. In Analysis Preferences, set the following:
+   Substitution model: the best-fit model from section 4, i.e., LG Model
    Rates among sites: Gamma (G), 5 categories
    Gaps/Missing data: Partial deletion, Site Coverage Cutoff 95%
-   ML Heuristic: Nearest-Neighbor-Interchange (NNI) — the default
-   Test of Phylogeny: Bootstrap, 1000 replications
+   ML Heuristic: Nearest-Neighbor-Interchange (NNI)
+   Test of Phylogeny: Adaptive Bootstrap, Threshold of 5.00
+ <img width="620" height="789" alt="image" src="https://github.com/user-attachments/assets/19aff01b-b8e6-401a-a1b3-0c967f03bf39" />
 5. Click OK to generate and visualize the final tree.
+<img width="472" height="379" alt="image" src="https://github.com/user-attachments/assets/9997a8a2-651c-4c4c-91fb-4b0a42dfb8cb" />
+6. Open the tree in the in-built tree viewer
+7. Toggle options to view ancestors, node lengths, etc.
+8. Export the tree in Newick format and as an image
 
 **5. Interpretation and Analysis**
 After the phylogenetic tree is generated, we are interested to analyse the tree
