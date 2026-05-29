@@ -85,9 +85,10 @@ What the data showed: my raw alignment was 844 columns wide, but every sequence 
 
 **3.1 Procedure:**
 1. In Alignment Explorer, identify columns with excessive gaps.
-
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/a6a1bb37-f56e-466f-b5fb-6ff7d36aec50" />
 3. Highlight and Delete the unaligned ends (N-terminus and C-terminus).
 4. Scan for unique large insertions that don't align with the alignment.
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/ac37ccdc-d1d8-494c-a0bb-d96f9e6bc6de" />
 5. Export the trimmed alignment as FASTA and MEGA formats i.e, `seqtrimmed.fasta` and `seqtrimmed.meg`.
 
 **4 Model Selection**
