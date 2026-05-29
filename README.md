@@ -1,12 +1,13 @@
 **Phylogenetic Tree Generation and Analysis Pipeline**
 
-I'm gonna describe all the steps that I've performed to generate a phylogenetic tree here. I was asked to perform this for the **Septin protein**, found in the cytoskeleton of the cell. I will be using the protein sequences of septins from each major organism classification to show the very reason we use a phylogenetic tree, i.e., to show how they are related.
+I'm gonna describe all the steps that I've performed to generate a phylogenetic tree here. I was asked to perform this for the **Septin protein**, found in the cytoskeleton of the cell.  Septins are a family of GTP-binding proteins associated with the cytoskeleton, originally discovered in budding yeast as essential for cytokinesis, and now known across fungi, animals, and some protists. They polymerise into filaments and higher-order structures (rings, gauzes) by assembling into hetero-oligomeric complexes. I am using septin protein sequences sampled across the major eukaryotic lineages to reconstruct how they are evolutionarily related — both within the family (the orthologous subgroups) and across kingdoms. 
+I will be using the protein sequences of septins from each major organism classification to show the very reason we use a phylogenetic tree, i.e., to show how they are related.
 
 
 **1. Data Retrieval**
 The protein sequences for septins from each organism were retrieved from NCBI
 
-**Organisms selected:** Lab model organisms like *Mus musculus, C. elegans, Drosophila melanogaster*, and other standards like *Homo sapiens* and *S. cerevisiae*.
+**Organisms selected:** Lab model organisms like *Mus musculus, C. elegans, Drosophila melanogaster*, and other standards like *Homo sapiens* and *S. cerevisiae*, also with a deep-branching lineage for rooting the tree using _Tetrahymena_.
 
 **1.1 Data Selected for Analysis**
 KAI4039009.1 septin 2 [Homo sapiens]<br>
@@ -29,6 +30,8 @@ QHB09098.1 Cdc12 [Saccharomyces cerevisiae]<br>
 QHB07264.1 Shs1 [Saccharomyces cerevisiae]<br>
 FAA14531.1 TPA: septin protein [Tetrahymena thermophila]<br>
 
+I took one representative per subgroup per lineage wherever possible. For human and mouse I took one member of each of the four subgroups (septin 2, 3, 6, 7). For the invertebrates I took the septins they actually possess (only two or three subgroups are represented in invertebrates). For yeast I took all five core septins (Cdc3, Cdc10, Cdc11, Cdc12, Shs1), noting that fungal septins are not directly orthologous to the animal subgroups and are expected to form their own clade. 
+
 
 **1.2 Procedure**
 * Go to [NCBI](https://www.ncbi.nlm.nih.gov/) and search for "Septins".
@@ -48,6 +51,8 @@ FAA14531.1 TPA: septin protein [Tetrahymena thermophila]<br>
 
 **2. Performing Multiple Sequence Alignment (MSA)**
 MSA aligns sequences based on shared similarities to highlight conserved regions and evolutionary changes.
+For septins, the strongly conserved feature is the central GTP-binding (G) domain, which carries the P-loop (G1), and the G3 and G4 motifs. These regions align cleanly across all lineages and carry the phylogenetic signal.
+
 
 **2.1 Tools Used**
 We are using the [MEGA Software](https://www.megasoftware.net/) for alignment and tree construction.
@@ -62,32 +67,47 @@ We are using the [MEGA Software](https://www.megasoftware.net/) for alignment an
 * Select all sequences and navigate to Alignment > Align by MUSCLE.
 <img width="1440" height="900" alt="Align by MUSCLE" src="https://github.com/user-attachments/assets/c3ab478a-20f9-4bbe-bcde-ef4e106bd8ac" />
 
-* Set Gap Penalties (Open: -2.9, Extend: 0) and click OK.
+* Set the parameters (Gap Open −2.9, Gap Extend 0, Hydrophobicity Multiplier 1.2, Max Iterations 16, Clustering UPGMB) and click OK.
 <img width="1440" height="900" alt="Parameters" src="https://github.com/user-attachments/assets/f6d78fdc-bed9-4e23-89ed-ca499a3ccd72" />
 
-* Export the alignment in MEGA format*as `seqaligned.meg`.
+* Export the alignment in MEGA format as `seqaligned.meg`, also in FASTA format as `seqaligned.fasta`.
 <img width="1440" height="900" alt="Export MEGA" src="https://github.com/user-attachments/assets/b4b024e9-b67a-4ea7-94da-6bbea3d974fc" />
 
 
 **3 Data Cleaning and Trimming**
-We remove non-aligned regions (ragged N and C terminals) and excessive gaps that act as "noise" during tree generation.
+We remove non-aligned regions (ragged N and C terminals) and excessive gaps that act as "noise" during tree generation. Removing them concentrates the analysis on the homologous, alignable core (the G-domain).
+What the data showed: my raw alignment was 844 columns wide, but every sequence was 40–60% gaps. The well-occupied core (columns with ≥50% of sequences present) ran roughly from column 111 to 836; everything before 111 and after 836 was ragged terminal overhang, and the interior contained many sparse insertion columns. 
 
 **3.1 Procedure:**
 1. In Alignment Explorer, identify columns with excessive gaps.
 2. Highlight and Delete the unaligned ends (N-terminus and C-terminus).
 3. Scan for unique large insertions that don't align with the alignment.
+4. Export the trimmed alignment as FASTA and MEGA formats i.e, `seqtrimmed.fasta` and `seqtrimmed.meg`.
 
-
-**4. Constructing the Phylogenetic Tree**
-This is the final core step to visualize evolutionary relationships.
+**4 Model Selection**
+Before building a Maximum Likelihood tree, the best-fit amino-acid substitution model must be chosen, because ML estimates the tree under an explicit model of how residues change. Skipping this and using a raw distance would discard that information.
 
 **4.1 Procedure**
-* Return to the main MEGA window and click Phylogeny > Construct/Test Neighbor-Joining Tree.
-* Load your `seqaligned.meg` file.
-* In Analysis Preferences, set the following:
-    * Test of Phylogeny: Bootstrap method (1000 replications).
-    * Model/Method: p-distance (for Protein).
-*  Click OK to generate and visualize the final tree.
+
+1. Main MEGA window → Models → Find Best Protein Models (ML) → load `seqtrimmed.meg`.
+2. MEGA ranks models by BIC and AICc. Choose the model with the lowest BIC.
+3. Record the winner and its parameters (for septins this is typically LG+G or LG+G+I)
+
+
+**5. Constructing the Phylogenetic Tree**
+This is the final core step to visualize evolutionary relationships.
+I built a Maximum Likelihood (ML) tree, which finds the topology that makes the observed alignment most probable under the chosen substitution model. ML is preferred over distance methods like Neighbor-Joining for deep, divergent datasets like this one because it models site-by-site substitution rather than collapsing everything to a single distance.
+
+**5.1 Procedure**
+1. Return to the main MEGA window and click Phylogeny > Construct/Test Maximum Likelihood Tree.
+2. Load your `seqaligned.meg` file.
+3. In Analysis Preferences, set the following:
+   Substitution model: the best-fit model from section 4 (e.g. LG)-changeeeeeeeeeeeee
+   Rates among sites: Gamma (G), 5 categories
+   Gaps/Missing data: Partial deletion, Site Coverage Cutoff 95%
+   ML Heuristic: Nearest-Neighbor-Interchange (NNI) — the default
+   Test of Phylogeny: Bootstrap, 1000 replications
+5. Click OK to generate and visualize the final tree.
 
 **5. Interpretation and Analysis**
-After the phylogenetic tree is generated, we are interested to analyse the tr
+After the phylogenetic tree is generated, we are interested to analyse the tree
