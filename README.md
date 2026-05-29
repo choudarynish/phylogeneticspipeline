@@ -76,3 +76,5 @@ This is the final core step to visualize evolutionary relationships.
     * Model/Method: p-distance (for Protein).
 *  Click OK to generate and visualize the final tree.
 
+**5. Interpretation and Analysis**
+After the phylogenetic tree is generated, we are interested to analyse the tr
