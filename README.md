@@ -122,8 +122,15 @@ I built a Maximum Likelihood (ML) tree, which finds the topology that makes the 
 5. Click OK to generate and visualize the final tree.
 <img width="472" height="379" alt="image" src="https://github.com/user-attachments/assets/9997a8a2-651c-4c4c-91fb-4b0a42dfb8cb" />
 6. Open the tree in the in-built tree viewer
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/f328bb06-4c58-4bca-ae01-376a63bf4730" />
 7. Toggle options to view ancestors, node lengths, etc.
+
 8. Export the tree in Newick format and as an image
 
 **5. Interpretation and Analysis**
-After the phylogenetic tree is generated, we are interested to analyse the tree
+After the phylogenetic tree is generated, we are interested to analyse the tree for what it would like to infer.
+_Tetrahymena thermophila_, falls at the base on a very long branch (0.882, the longest in the tree), which is what was expected — it is the most distantly related organism in the set and serves as a natural outgroup to root the tree.
+The fungal septins form their own clade, separate from the animal septins. The _Saccharomyces_ sequences (Cdc3, Cdc10, Cdc11, Cdc12, Shs1) do not nest inside the animal groups. CDC11 and SHS1 group together with strong support (bootstrap 95), and the other Cdc proteins branch away from the animal subgroups. This matches the known biology: although all septins descend from a single ancient ancestor, the fungal and animal septins are not directly orthologous — the duplications that produced yeast's five core septins happened independently of the duplications that produced the animal subgroups. So "yeast Cdc10" is not the ortholog of any one human septin; it is a fungal-lineage paralog. 
+Orthologs group by gene identity across species, not by organism — which validates the balanced sampling. The clearest signal in the tree is the tight, maximally-supported ortholog pairs: S7_MusMusculus with S7_Drosophila (bootstrap 100), S3_HomoSapiens with S3_MusMusculus (100), S2/S6_MusMusculus with S2_HomoSapiens (100). Mouse septin 7 sits with fly septin 7, not with mouse septin 2. This is the signature of a clean phylogeny: when the same gene from different species groups together rather than different genes from the same species, the tree is tracking gene ancestry (orthology), which is what we want. Had I pooled all paralogs without balancing, these clean ortholog signals would have been buried under lineage-specific expansion.
+The septin subgroups are partially recovered. The SEPT7-type sequences group together, and the SEPT3-type sequences (S3_HomoSapiens + S3_MusMusculus) form a strong clade sitting near the fungal group. This is consistent with the four-subgroup model of animal septins, and with the observation that only a subset of subgroups is represented in invertebrates.
+
