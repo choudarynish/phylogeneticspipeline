@@ -59,19 +59,24 @@ We are using the [MEGA Software](https://www.megasoftware.net/) for alignment an
 
 **2.2 The Procedure**
 * Open MEGA and choose Align > Edit/Build Alignment.
-<img width="1440" height="900" alt="MEGA Welcome" src="https://github.com/user-attachments/assets/4b1f7c63-6025-4886-9474-a5ed68e67957" />
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/4111e99a-d8f3-4f83-8191-45f363d0abb6" />
+
 
 * Select Retrieve sequences from a file" and locate your `seq.fasta`.
-<img width="1440" height="900" alt="Load File" src="https://github.com/user-attachments/assets/03cc23a9-6808-427b-8b06-5b123446f0bc" />
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/d85b248d-8a7f-4f48-b85e-759e38c58c78" />
+
 
 * Select all sequences and navigate to Alignment > Align by MUSCLE.
-<img width="1440" height="900" alt="Align by MUSCLE" src="https://github.com/user-attachments/assets/c3ab478a-20f9-4bbe-bcde-ef4e106bd8ac" />
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/57335b49-c059-4074-8c1b-a4a921f42394" />
+
 
 * Set the parameters (Gap Open −2.9, Gap Extend 0, Hydrophobicity Multiplier 1.2, Max Iterations 16, Clustering UPGMB) and click OK.
-<img width="1440" height="900" alt="Parameters" src="https://github.com/user-attachments/assets/f6d78fdc-bed9-4e23-89ed-ca499a3ccd72" />
+<img width="567" height="421" alt="image" src="https://github.com/user-attachments/assets/dbd53020-6494-403c-9fe5-450b39db9ea8" />
+
 
 * Export the alignment in MEGA format as `seqaligned.meg`, also in FASTA format as `seqaligned.fasta`.
-<img width="1440" height="900" alt="Export MEGA" src="https://github.com/user-attachments/assets/b4b024e9-b67a-4ea7-94da-6bbea3d974fc" />
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/53ca7a90-27f3-4ffd-9375-638271d42643" />
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/e5ad0487-ebc3-4a4b-97a0-358e8fc45acf" />
 
 
 **3 Data Cleaning and Trimming**
@@ -80,9 +85,10 @@ What the data showed: my raw alignment was 844 columns wide, but every sequence 
 
 **3.1 Procedure:**
 1. In Alignment Explorer, identify columns with excessive gaps.
-2. Highlight and Delete the unaligned ends (N-terminus and C-terminus).
-3. Scan for unique large insertions that don't align with the alignment.
-4. Export the trimmed alignment as FASTA and MEGA formats i.e, `seqtrimmed.fasta` and `seqtrimmed.meg`.
+
+3. Highlight and Delete the unaligned ends (N-terminus and C-terminus).
+4. Scan for unique large insertions that don't align with the alignment.
+5. Export the trimmed alignment as FASTA and MEGA formats i.e, `seqtrimmed.fasta` and `seqtrimmed.meg`.
 
 **4 Model Selection**
 Before building a Maximum Likelihood tree, the best-fit amino-acid substitution model must be chosen, because ML estimates the tree under an explicit model of how residues change. Skipping this and using a raw distance would discard that information.
